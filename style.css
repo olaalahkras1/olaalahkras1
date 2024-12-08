@@ -1,0 +1,448 @@
+/* :root {
+  --bulma-family-primary: font-family: Roboto, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  
+} */
+:root {
+  --bulma-primary-h: 15deg;
+  --bulma-primary-s: 88%;
+  --bulma-primary-l: 35%;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.font{
+  font-family: "Amatic SC", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+ @media screen and (max-width:760px) {
+
+    html {
+        font-size: 12px;
+    }
+
+   
+    
+    .title.is-2 {
+        font-size: 2.2rem !important;
+    }
+    .margen{
+        margin: 0.2rem;
+        
+    }
+    .respon{
+        margin: 0px;
+    }
+  
+ 
+}
+@media screen and (max-width:760px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    #scrollToTopBtn {
+      position: fixed; /* Fixed at the bottom-right corner */
+      bottom: 10px;
+      right: 10px;
+      display: block; /* Initially hidden */
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      font-size: 6px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+    }
+    .img_mobile{
+      
+      background-image:  url(./img/reservation.jpg); background-size: cover; background-repeat: no-repeat; height: "10vh ";
+    }
+
+}
+#scrollToTopBtn {
+  position: fixed; /* Fixed at the bottom-right corner */
+  bottom: 20px;
+  right: 20px;
+  display: block; /* Initially hidden */
+  background-color: #9EDF9C;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #205625;
+}
+
+.f_section{
+    margin-top: 100px;
+}
+.mt-6 {
+    margin-top: 2.6rem !important;
+}
+.cadrh:hover .buttonh{
+    background-color: rgb(70, 115, 53);
+}
+.img{
+    position: relative;
+}
+
+
+
+
+.border{
+    border-bottom:0.2rem rgb(181, 177, 177) solid ;
+}
+
+.border:hover {
+    border-bottom:0.2rem rgb(108, 22, 22) solid ;
+}
+.border_slid{
+    border-left: 0.2rem rgb(52, 151, 80) solid;
+    /* margin-left: 30em; */
+}
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  
+  
+  /* Number text (1/3 etc) */
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+.img_pos{
+    position: relative;
+}
+.pos_1{
+    position: absolute;
+    padding: 3rem;
+    margin: 0rem;
+    top: 1rem;
+    left: -1rem;
+    color: aliceblue;
+}
+.pos_2{
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    color: aliceblue;
+    /* border-bottom:0.7 red solid ; */
+}
+.pos_3{
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+    color: aliceblue;
+   
+}
+.border_img{
+    border-bottom: 0.2rem rgb(17, 67, 24) solid;
+ 
+}
+  
+    .img_1{
+      position: relative;
+      z-index: 2;
+  }
+  .chat_icon{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    z-index: 1;
+    border:0.1rem #f3eaea14 solid;
+    display: none;
+    
+  }
+  
+  .cheef-info{
+    transform: scale(1);
+  }
+  .cheef-info:hover{
+    transform:  scale(1.1);
+    transition-duration: 1s;
+  }
+ 
+  .cheef-info:hover .chat_icon{
+    
+    
+      top: 2rem;
+      right: 1rem;
+      z-index: 3;
+      display: inline;
+    
+  }
+  
+.pl{
+  padding-left: 11rem;
+  padding-bottom: 1rem;
+border-radius: 0.5rem;
+border: #bbb ;
+}
+
+.border_help{
+  
+  border:0.2rem rgba(200, 197, 197, 0.168) solid ;
+  box-shadow: 2px 2px 2px 1px #fff7f7e1;
+
+}
+
+.stats-section {
+  background: url('./img/stats-bg.jpg') no-repeat center center/cover;
+  height:auto; /* يجعل الطول يغطي الشاشة بالكامل */
+  width: 100%;
+  margin-top: 50px ;
+  padding: 50px 0;
+  display: flex; /* استخدام Flexbox لتوسيط المحتوى */
+  justify-content: center; /* توسيط أفقي */
+  align-items: center; 
+  position: relative;
+}
+
+.stats-bg {
+  background: rgba(115, 115, 115, 0.404); 
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  width: 100%; 
+  height: 80vh;
+}
+
+.stats {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  height: 80vh;
+}
+
+.stat-item {
+  text-align: center;
+  margin: 20px;
+}
+
+.stat-item h3 {
+  font-family: 'Lavishly Yours Static', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.stat-item p {
+  font-size: 1.6rem;
+  color: #f3eaf1;
+}
+
+/* For Small Screens */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column; /* ترتيب العناصر عمودياً في الشاشات الصغيرة */
+  }
+
+  .stat-item h3 {
+    font-size: 2.5rem;
+  }
+  .pl{
+    padding-left: 6rem;
+    padding-bottom: 0.3rem;
+  border-radius: 0.5rem;
+  border: #bbb ;
+  }
+}
+.icon_hov:hover{
+  color: #007BFF;
+}
+/* start section contact */
+.Section-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+
+
+.card-contact {
+
+  box-shadow: 0 0 12px 10px rgb(108 108 104 / 13%);
+  margin: 1.5rem;
+  padding: 1rem;
+  width: 40rem;
+  display: flex;
+}
+
+.icon-container i {
+  font-size: 2rem;
+  background-color: #6ddf9f;
+  color: #ece2e2;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-container i:hover {
+  transform: scale(1.2);
+  background-color: #fafafa;
+  color: #8ee2be;
+  box-shadow: 0 0 12px 10px rgba(110, 109, 109, 0.13);
+
+}
+
+/* end section contact */
+/* style swiper */
+html,
+body {
+  position: relative;
+  height: 10%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  color: #000;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.swiper {
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.swiper-slide {
+  background-position: center;
+  /* background-size: cover; */
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 59%;
+}
+@media screen and (max-width:760px) {
+
+  html {
+      font-size: 12px;
+  }
+  html,
+  body {
+    position: relative;
+    height: 10%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: #000;
+    margin-bottom: 3px;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    /* background-size: cover; */
+    width: 50px;
+    height: 50px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }}
